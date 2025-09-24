@@ -8,9 +8,9 @@
 </head>
 <body>
 <%
+
 try {
-	int val = Integer.parseInt(request.getParameter("age"));
-	
+	int val = Integer.parseInt(request.getParameter("val"));
 	if (val >= 2 && val <= 9) {
 		out.println("<table>");
 		out.println("<tr><h2>"+val + "단</h2></tb>");
