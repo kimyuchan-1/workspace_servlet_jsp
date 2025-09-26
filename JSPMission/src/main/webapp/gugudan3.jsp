@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gugudan</title>
+<title>gugudan3</title>
 </head>
 <body>
 <%
-
 try {
 	int val = Integer.parseInt(request.getParameter("val"));
 	if (val >= 2 && val <= 9) {

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gugudan</title>
+<title>gugudan1</title>
 </head>
 <body>
 <%
