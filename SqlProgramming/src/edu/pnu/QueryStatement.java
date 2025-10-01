@@ -196,6 +196,7 @@ public class QueryStatement {
 			while (true) {
 				
 				showMenu();
+				System.out.print("메뉴를 선택해주세요 : ");
 				System.out.println();
 				int menu = sc.nextInt();
 				switch(menu) {
