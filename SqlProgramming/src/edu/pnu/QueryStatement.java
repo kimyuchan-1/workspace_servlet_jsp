@@ -49,10 +49,9 @@ public class QueryStatement {
 		System.out.print("국가명을 입력해주세요(ex. Korea) : ");
 		String cont = sc.next();
 		ResultSet rs = st.executeQuery("select city.name, country.name, city.population "
-									 + "from city "
-									 + "join country "
-									 + "on city.countrycode = country.code"
-									 + "where country.name like '"+cont+"'");
+									 + "from city, country "
+									 + "where country.name like '"+cont+"'"
+									 + "and city.countrycode = country.code");
 		
 		while (rs.next()) {
 			System.out.print(rs.getString("city.name")+",");
