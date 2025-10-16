@@ -175,11 +175,17 @@ public class QueryStatement {
 		System.out.println("=======================Menu=======================");
 		System.out.println("1번 : 입력한 인구 수보다 많은 도시 출력");
 		System.out.println("2번 : 국가 코드로 해당 국가의 도시와 인구수 출력");
-		System.out.println("3번 : 대륙명으로 해당 대륙에 속한 국가 출력");
-		System.out.println("4번 : 입력한 면적보다 작은 국가 출력");
-		System.out.println("5번 : 입력한 대한민국의 행정구 내 모든 도시 출력");
-		System.out.println("6번 : 입력한 언어를 공식적으로 사용하는 국가 출력");
-		System.out.println("7번 : 입력한 언어 사용 비율보다 높은 언어 사용을 가진 국가 출력");
+		System.out.println("3번 : 국가명의 일부로 해당 국가의 도시와 인구수 출력");
+		System.out.println("4번 : 국가명 혹은 국가코드의 일부로 해당 국가의 도시와 인구수 출력");
+		System.out.println("5번 : 대륙명으로 해당 대륙에 속한 국가 출력");
+		System.out.println("6번 : 입력한 면적보다 작은 국가 출력");
+		System.out.println("7번 : 입력한 대한민국의 행정구 내 모든 도시 출력");
+		System.out.println("8번 : 입력한 언어를 공식적으로 사용하는 국가코드 출력");
+		System.out.println("9번 : 입력한 언어를 공식적으로 사용하는 국가명 출력");
+		System.out.println("10번 : 입력한 언어 사용 비율보다 높은 언어 사용을 가진 국가 출력");
+		System.out.println("0번 : 종료");
+		System.out.println("==================================================");
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
@@ -201,11 +207,14 @@ public class QueryStatement {
 				switch(menu) {
 				case 1 -> method1(con);
 				case 2 -> method2(con);
-				case 3 -> method3(con);
-				case 4 -> method4(con);
-				case 5 -> method5(con);
-				case 6 -> method6(con);
-				case 7 -> method7(con);
+				case 3 -> method2_1(con);
+				case 4 -> method2_2(con);
+				case 5 -> method3(con);
+				case 6 -> method4(con);
+				case 7 -> method5(con);
+				case 8 -> method6(con);
+				case 9 -> method6_1(con);
+				case 10 -> method7(con);
 				case 0 -> {
                     System.out.println("프로그램을 종료합니다.");
                     return; // main 종료
