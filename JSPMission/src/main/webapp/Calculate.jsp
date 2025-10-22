@@ -7,7 +7,6 @@ public int GCD(int x, int y) {
 	while (y != 0) {
 		int temp = y;
 		y = x % y;
-		y = x;
 		x = temp;
 	}
 	return x;

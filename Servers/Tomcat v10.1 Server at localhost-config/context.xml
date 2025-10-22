@@ -18,6 +18,11 @@
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
+    <ResourceLink
+	 	global="dbcp_mysql"
+	 	name="dbcp_mysql"
+		type="javax.sql.DataSource"/>
+    
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
