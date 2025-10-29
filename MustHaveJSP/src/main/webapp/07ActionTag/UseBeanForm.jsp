@@ -20,7 +20,8 @@ String currentTimeStr = dateFormat.format(new Date(currentTime));
 		아이디 : <input type = "text" name = "id" /><br />
 		패스워드 : <input type = "text" name = "pass" /><br />
 		이름 : <input type = "text" name = "name" /><br />
-		등록일 : <input type = "text" name = "regidate" value = <%= currentTimeStr%> readonly/><br />
+		등록일 : <input type = "text" name = "regidate" value = <%= currentTimeStr%> readonly /><br />
+		
 		<input type = "submit" value = "폼값 전송"/>
 	</form>
 </body>
