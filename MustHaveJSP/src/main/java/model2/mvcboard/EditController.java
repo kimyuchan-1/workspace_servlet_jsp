@@ -14,8 +14,8 @@ import utils.JSFunction;
 
 @WebServlet("/mvcboard/edit.do")
 @MultipartConfig(
-		maxFileSize = 1024*1024*1,
-		maxRequestSize = 1024*1024*10
+		maxFileSize = 1024*1024*100,
+		maxRequestSize = 1024*1024*1000
 		)
 public class EditController extends HttpServlet{
 

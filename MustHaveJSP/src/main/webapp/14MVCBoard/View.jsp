@@ -16,19 +16,19 @@
 		</colgroup>
 		
 		<tr>
-			<td>번호</td> <td>${ dto.idx }</td>
-			<td>작성자</td> <td>${ dto.name }</td>
+			<td align="center">번호</td> <td>${ dto.idx }</td>
+			<td align="center">작성자</td> <td>${ dto.name }</td>
 		</tr>
 		<tr>
-			<td>작성일</td> <td>${ dto.postdate }</td>
-			<td>조회수</td> <td>${ dto.visitcount }</td>
+			<td align="center">작성일</td> <td>${ dto.postdate }</td>
+			<td align="center">조회수</td> <td>${ dto.visitcount }</td>
 		</tr>
 		<tr>
-			<td>제목</td> 
+			<td align="center">제목</td> 
 			<td colspan = "3">${ dto.title }</td>
 		</tr>
 		<tr>
-			<td>내용</td> 
+			<td align="center">내용</td> 
 			<td colspan = "3" height = "100">${ dto.content }
 				<c:if test="${ not empty dto.ofile and isImage eq true }">
 					<br><img src ="../Uploads/${ dto.sfile }" style ="max-width:100%;"/>
@@ -36,14 +36,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td>첨부 파일</td>
+			<td align="center">첨부 파일</td>
 			<td>
 				<c:if test="${ not empty dto.ofile }">
 					${ dto.ofile }
 					<a href = "../mvcboard/download.do?ofile=${ dto.ofile }&sfile=${ dto.sfile }&idx=${ dto.idx }">[다운로드]</a>				
 				</c:if>
 			</td>
-			<td>다운로드수</td>
+			<td align="center">다운로드수</td>
 			<td>${ dto.downcount }</td>
 		</tr>
 		<tr>
