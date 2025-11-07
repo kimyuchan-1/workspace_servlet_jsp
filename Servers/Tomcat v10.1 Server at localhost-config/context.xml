@@ -14,15 +14,14 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><!-- The contents of this file will be loaded for each web application --><Context>
-
+--><!-- The contents of this file will be loaded for each web application -->
+<Context>
+	<ResourceLink
+	 global="dbcp_mysql"
+	 name="dbcp_mysql"
+	 type="javax.sql.DataSource"/>
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
-    <ResourceLink
-	 	global="dbcp_mysql"
-	 	name="dbcp_mysql"
-		type="javax.sql.DataSource"/>
-    
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
