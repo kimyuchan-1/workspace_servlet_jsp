@@ -18,7 +18,7 @@
 	lists.add(new Person("맹사성", 34));
 	lists.add(new Person("장영실", 44));
 	lists.add(new Person("신숙주", 54));
-	%>
+	%> 
 	<c:set var ="lists" value="<%= lists %>" />
 	<c:forEach items="${ lists }" var = "list">
 		<li>

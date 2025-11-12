@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>JSTL - if</title>
-</head>
+</head> 
 <body>
 	<c:set var="number" value = "100"/>
 	<c:set var="string" value = "JSP"/>

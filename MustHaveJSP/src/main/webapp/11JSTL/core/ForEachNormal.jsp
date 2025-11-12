@@ -16,7 +16,7 @@
 	<h4>varStatus 속성 살펴보기</h4>
 	<table border="1">
 		<c:forEach begin="3" end="5" var="i" varStatus="loop">
-			<tr>
+			<tr> 
 				<td>count : ${ loop.count }</td>
 				<td>index : ${ loop.index }</td>
 				<td>current : ${ loop.current }</td>
